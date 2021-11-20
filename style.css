@@ -1,0 +1,36 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.order_now {
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #e0333b;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+}
+
+footer {
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+}
+
+footer h2 {
+    align-content: center;
+}
