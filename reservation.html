@@ -16,7 +16,7 @@
                 <div class = "topnav">
                     <a class="active" href="menu.html">Menu</a>
                     <a href="about_us.html">About Us</a>
-                    <a href="reservation.html">Make a Reservation ahead of time </a>
+                    <a href="index.html">Home page </a>
                     <div class="topnav-right">
                         <a href="index.html"> Try our Happy Hour meals with additional discounts </a>
                     </div>
@@ -25,7 +25,7 @@
             
         </div>
         <div class="welcome_container">
-            <h1 class="highlight">Welcome</h1>
+            <h1 class="highlight">Make a Reservation</h1>
             <h1 class="brand"> Restaurant a la Chef </h1>
             <p> ------------------------------ <span class="symbol"> &#10059; </span> ------------------------------</p>
             <h2> Ready to Serve you with the best food across city </h2>
@@ -43,12 +43,38 @@
     </section> 
     <section id="about" class="breakpoint">
         <div class="content">
-            <h1 class="highlight"> Discover Delicious food in town</h1>
-            <h1 class="topic"> WITH US </h1>
+            <h1 class="highlight"> Please Provide the follwing Information to</h1>
+            <h1 class="topic"> reserve your seat ahead of time </h1>
             <p class="symbol"> &#10059; </p>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                
+                <label for ="phno"> Phn.  Num: </label>
+                <input type="text" id="phone" name="phone"><br><br>
+                
+                <label for ="time"> Date : </label>
+                <input type="date" id="time" name="time"><br><br>
+                
+                <label for ="time"> Time : </label>
+                <input type="time" id="appt" name="appt"
+                min="09:00" max="18:00" required><br><br>
+
+                <label for="NumCust">Number Of Customers</label>
+                <input type="text" id="customer" name="customer"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+              
+
+
+
+
             <p> We serve the delicious food with good quality and services. Join us and get an addition 15% off on your first visit. </p>
             <p> Arrangements available for the parties and delivering food. No matter quantity, we Never compromise with qualuty.
-            <h2><a href="#"> About us </a></h2>
+            <h2><a href="index.html"> Home </a></h2>
         </div>
 
     </section>
