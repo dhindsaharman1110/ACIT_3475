@@ -162,3 +162,34 @@ section img {
 		margin-bottom: 40px;
 	}
 }
+
+.heads {
+	color:rgb(116, 56, 4);
+	margin-left: 50px;
+	font-style: oblique;
+}
+
+.des {
+	color: rgb(180, 9, 9);
+	margin-left: 80px
+}
+
+.star {
+	color: gold;
+}
+
+.imgs {
+	align: right;
+	float: right;
+}
+
+.menus{
+	background-color: gold;
+	color: black;
+}
+
+.add_now {
+	padding: 25px;
+	background-color: gold;
+	color:black;	
+}
