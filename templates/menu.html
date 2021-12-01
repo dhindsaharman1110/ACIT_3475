@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+        {% for food in menu %}
+            <a href="#">
+                <h2>{{ food['food_name'] }}</h2>
+            </a>
+            <span class="badge badge-primary">{{ food['description'] }}</span>
+            <span class="badge badge-primary">${{ food['price'] }}</span>
+        <hr>
+        {% endfor %}
+    {% endblock %}
+
+    <footer>
+        <h2>Contact us: 123-321-4567</h2>
+    </footer>
+
+</body>

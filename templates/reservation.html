@@ -1,29 +1,19 @@
 <!DOCTYPE html>
+
 <head>
     <title>Restaurant</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header id = "go_to_top">
-        <div class="align">
-            <div>
-                <div class = "a">
-                    <h2>Restaurant a la chef</h2>
-                </div>
-                <div class = "topnav">
-                    <a class="active" href="menu.html">Menu</a>
-                    <a href="about_us.html">About Us</a>
-                    <a href="index.html">Home page </a>
-                    <div class="topnav-right">
-                        <a href="index.html"> Try our Happy Hour meals with additional discounts </a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <header id="go_to_top">
+
         <div class="welcome_container">
             <h1 class="highlight">Make a Reservation</h1>
             <h1 class="brand"> Restaurant a la Chef </h1>
@@ -40,7 +30,7 @@
         <!-- We can replace the name later -->
         <h1>Welcome to Restaurant a la Chef!</h1>
 
-    </section> 
+    </section>
     <section id="about" class="breakpoint">
         <div class="content">
             <h1 class="highlight"> Please Provide the follwing Information to</h1>
@@ -49,35 +39,37 @@
             <form action="/action_page.php">
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="fname"><br><br>
-                
+
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname"><br><br>
-                
-                <label for ="phno"> Phn.  Num: </label>
+
+                <label for="phno"> Phn. Num: </label>
                 <input type="text" id="phone" name="phone"><br><br>
-                
-                <label for ="time"> Date : </label>
+
+                <label for="time"> Date : </label>
                 <input type="date" id="time" name="time"><br><br>
-                
-                <label for ="time"> Time : </label>
-                <input type="time" id="appt" name="appt"
-                min="09:00" max="18:00" required><br><br>
+
+                <label for="time"> Time : </label>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required><br><br>
 
                 <label for="NumCust">Number Of Customers</label>
                 <input type="text" id="customer" name="customer"><br><br>
                 <input type="submit" value="Submit">
-              </form>
-              
+            </form>
 
 
 
 
-            <p> We serve the delicious food with good quality and services. Join us and get an addition 15% off on your first visit. </p>
-            <p> Arrangements available for the parties and delivering food. No matter quantity, we Never compromise with qualuty.
+
+            <p> We serve the delicious food with good quality and services. Join us and get an addition 15% off on your
+                first visit. </p>
+            <p> Arrangements available for the parties and delivering food. No matter quantity, we Never compromise with
+                qualuty.
             <h2><a href="index.html"> Home </a></h2>
         </div>
 
     </section>
+    {% endblock %}
     <footer>
         <h2>Contact us: 123-321-4567</h2>
     </footer>

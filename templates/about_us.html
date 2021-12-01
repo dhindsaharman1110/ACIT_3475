@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <head>
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    {% extends 'base.html' %}
+
+    {% block content %}
     <header>
         <div class="align">
             <div>
-                <div class= "a">
-                <h1>Restaurant a la Chef</h1>
-                </div>
+
                 <div class = "topnav">
-                    <a class="active"  href="index.html">Homepage</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="reservation.html">Make a Reservation ahead of time </a>
-                    <div class="topnav-right">
-                        <a href="index.html"> Try our Happy Hour meals with additional discounts </a>
-                    </div>
+                
                 </div>
             </div>
             <!-- <button class="order_now">ORDER NOW</button> -->
@@ -67,6 +63,7 @@
         </div>
 
     </section>
+    {% endblock %}
     <footer>
         <h2>Contact us: 123-321-4567</h2>
     </footer>

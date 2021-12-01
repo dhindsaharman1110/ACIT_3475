@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS menu;
+
+CREATE TABLE menu (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    food_name TEXT NOT NULL,
+    description TEXT,
+    price INTEGER NOT NULL
+);

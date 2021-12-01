@@ -13,7 +13,7 @@ header{
     border-bottom-width: 2px; */
     height: 100vh;
 	position: relative;
-	background: #0e131c url("./bg_re.jpg") no-repeat center center fixed;
+	background: #0e131c url("../bg_re.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -161,4 +161,35 @@ section img {
 	section#about {
 		margin-bottom: 40px;
 	}
+}
+
+.heads {
+	color:rgb(116, 56, 4);
+	margin-left: 50px;
+	font-style: oblique;
+}
+
+.des {
+	color: rgb(180, 9, 9);
+	margin-left: 80px
+}
+
+.star {
+	color: gold;
+}
+
+.imgs {
+	align: right;
+	float: right;
+}
+
+.menus{
+	background-color: gold;
+	color: black;
+}
+
+.add_now {
+	padding: 25px;
+	background-color: gold;
+	color:black;	
 }

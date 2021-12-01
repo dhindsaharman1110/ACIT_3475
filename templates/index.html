@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <head>
     <title>Restaurant</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    {% extends 'base.html' %}
+
+    {% block content %}
     <header id = "go_to_top">
-        <div class="align">
-            <div>
-                <div class = "a">
-                    <h2>Restaurant a la chef</h2>
-                </div>
-                <div class = "topnav">
-                    <a class="active" href="menu.html">Menu</a>
-                    <a href="about_us.html">About Us</a>
-                    <a href="reservation.html">Make a Reservation ahead of time </a>
-                    <div class="topnav-right">
-                        <a href="index.html"> Try our Happy Hour meals with additional discounts </a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+
         <div class="welcome_container">
             <h1 class="highlight">Welcome</h1>
             <h1 class="brand"> Restaurant a la Chef </h1>
@@ -41,6 +30,9 @@
         <h1>Welcome to Restaurant a la Chef!</h1>
 
     </section> 
+
+
+
     <section id="about" class="breakpoint">
         <div class="content">
             <h1 class="highlight"> Discover Delicious food in town</h1>
@@ -48,11 +40,12 @@
             <p class="symbol"> &#10059; </p>
             <p> We serve the delicious food with good quality and services. Join us and get an addition 15% off on your first visit. </p>
             <p> Arrangements available for the parties and delivering food. No matter quantity, we Never compromise with qualuty.
-            <h2><a href="#"> About us </a></h2>
+            <h2><a href="/about_us"> About us </a></h2>
         </div>
 
     </section>
     <footer>
         <h2>Contact us: 123-321-4567</h2>
     </footer>
+    {% endblock %}
 </body>
