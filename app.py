@@ -12,7 +12,7 @@ import sqlite3
 
 # print(mydb)
 
-
+app = Flask(__name__)
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
@@ -22,7 +22,7 @@ def get_db_connection():
 
 
 
-app = Flask(__name__)
+
 
 @app.route('/')
 def index():
@@ -47,4 +47,4 @@ def about_us():
     return render_template('./about_us.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(threaded=True, port=5000)
