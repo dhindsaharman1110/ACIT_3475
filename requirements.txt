@@ -2,6 +2,7 @@ click
 colorama
 Flask
 itsdangerous
+gunicorn
 Jinja2
 MarkupSafe
 mysql-connector-python
