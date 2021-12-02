@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <head>
     <title>Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     {% extends 'base.html' %}
 
     {% block content %}
-
+    <div class="container p-3 my-3 bg-dark text-white">
         {% for food in menu %}
             <a href="#">
                 <h2>{{ food['food_name'] }}</h2>
             </a>
-            <span class="badge badge-primary">{{ food['description'] }}</span>
+            <p>{{ food['description'] }}</p>
             <span class="badge badge-primary">${{ food['price'] }}</span>
         <hr>
         {% endfor %}
+    </div>
     {% endblock %}
-
+   
     <footer>
         <h2>Contact us: 123-321-4567</h2>
     </footer>
