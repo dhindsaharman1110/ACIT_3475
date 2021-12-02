@@ -16,10 +16,10 @@
     <div class="container p-3 my-3 bg-dark text-white">
         {% for food in menu %}
             <a href="#">
-                <h2>{{ food['food_name'] }}</h2>
+                <h2>{{ food[1] }}</h2>
             </a>
-            <p>{{ food['description'] }}</p>
-            <span class="badge badge-primary">${{ food['price'] }}</span>
+            <p>{{ food[2] }}</p>
+            <span class="badge badge-primary">${{ food[3] }}</span>
         <hr>
         {% endfor %}
     </div>
